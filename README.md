@@ -4,11 +4,14 @@ Repository for Data Science 871 Practical Test. The repository is intended to ho
 I also created a folder named `utilities` that contains some global scripts, such as `aesthetics.R` which defines a set of plot themes and palettes to ensure consistency across plot aesthetics.
 
 ##  Libraries/Packages Required
-* tidyverse (including ggplot2, dplyr, tidytext, magrittr, stringr)
-* readxl
-* pacman
-* ggridges
-* maps
+* `tidyverse` (including `ggplot2`, `dplyr`, `tidytext`, `magrittr`, `stringr`)
+* `texevier`
+* `readxl`
+* `pacman`
+* `ggridges`
+* `maps`
+* `lubridate`
+* `ggstream`
 
 ##  Question 1: Covid
 This question has been stored in the folder named `Question-1-Covid`. The following section explains step by step how the questions were answered.
