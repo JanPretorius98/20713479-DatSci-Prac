@@ -23,3 +23,5 @@ The following plotting techniques are used:
 * Simple line plots – Shows physical values and how they change over time.
 * Choropleth maps – Although static, having a few choropleth maps from different t may help to show geographical differences.
 * Scatterplots – Help us to relate different variables to each other.
+
+There are some data operations, such as aggregating the covid cases and deaths by continent. I created a cuntion to do this, but this turned out to be much slower than just coding the transformation for specific code chunks.
