@@ -18,13 +18,13 @@ This question has been stored in the folder named `question-1-covid`. The follow
 
 The first important thing to notice is the nature of the data - time-series. This implies that data visualisation techniques must exhibit not just differences between how countries experienced covid, but also differences within the countries themselves. The folllowing questions guide the analysis:
 * What are the larger trends in covid cases and deaths?
-**  Streamgraphs and lineplots
+  * Streamgraphs and lineplots
 * What are the differences in cases and death trends by continent?
-**  Geospatial analysis with choropleth maps; proportion of deaths to cases
+  * Geospatial analysis with choropleth maps; proportion of deaths to cases
 * How do some country level specifics influence the impact of covid?
-**  Scatterplots
+  * Scatterplots
 * How did infrastructure development contribute to the impact relief?
-**  Scatterplots
+  * Scatterplots
 
 
 ### Some more on plotting techniques being used:
