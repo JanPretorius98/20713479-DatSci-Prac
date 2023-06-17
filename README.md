@@ -35,3 +35,4 @@ The first important thing to notice is the nature of the data - time-series. Thi
 
 ### Pitfalls along the way:
 There are some data operations, such as aggregating the covid cases and deaths by continent. I created a function to do this, but this turned out to be much slower than just coding the transformation for specific code chunks.
+When calculating totals per hunderd/thousand/million by continent, I calculated it by summing the amount for each continent and dividing that by the population for the continent and then dividing by hunder/thousand/million. There are some columns that measure this, but as soon as these are summed by continent, you do not get true totals per hundred.
