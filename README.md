@@ -23,9 +23,10 @@ I also created a folder named `utilities` that contains some global scripts, suc
 * `lwgeom`
 
 ##  Question 1: Covid
-This question has been stored in the folder named `question-1-covid`. The following section explains step by step how the questions were answered.
+This question has been stored in the folder named `question-1-covid`. The following section explains step by step how the questions were answered. 
 
-The first important thing to notice is the nature of the data - time-series. This implies that data visualisation techniques must exhibit not just differences between how countries experienced covid, but also differences within the countries themselves. The folllowing questions guide the analysis:
+### The folllowing questions guide the analysis:
+The first important thing to notice is the nature of the data - time-series. This implies that data visualisation techniques must exhibit not just differences between how countries experienced covid, but also differences within the countries themselves.
 * What are the larger trends in covid cases and deaths?
   * Streamgraphs and lineplots
 * What are the differences in cases and death trends by continent?
@@ -46,24 +47,57 @@ The first important thing to notice is the nature of the data - time-series. Thi
 ### Pitfalls along the way:
 There are some data operations, such as aggregating the covid cases and deaths by continent. I created a function to do this, but this turned out to be much slower than just coding the transformation for specific code chunks.
 When calculating totals per hunderd/thousand/million by continent, I calculated it by summing the amount for each continent and dividing that by the population for the continent and then dividing by hunder/thousand/million. There are some columns that measure this, but as soon as these are summed by continent, you do not get true totals per hundred.
-Kable was given me several issues with printing a table, and I was unable to rectify the issue
+Kable was given me several issues with printing a table, and I was unable to rectify the issue. I then opted to use the `gt` package to create a table. 
 
 ## Question 2: London Weather
 This question has been stored in the folder named `question-2-londonWeather`. The following section explains step by step how the questions were answered.
 
-Small data operations need to be performed:
+### Small data operations need to be performed:
 * Format the dates in the data.
 
+### The following questions guide the analysis:
 The plan is to create some quirky, but visually appealing graphs.
-The following questions guide the analysis:
 * What is the temperature usually like in London?
   * Create a colour gradient ridgeline plot
 * What is the weather like?
   * Create a raincloud plot (basically a violin plot) to visualise rainfall
   * Create an area plot to show sunshine and cloud coverage
-* Is London windy, foggy?
-  * Unfortunately, data not included.
-* If the sun is out, how long does sunshine last?
-  * Unfortunately, data not included.
+* Compare Cpt temperature and rainfall with London
+  * Line plots
 
-The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data. As far as I could see, data for weather on Cape town is blocked by paywalls. In this regard, it was not possible to compare Cape Town data with London data.
+### Some pitfalls along the way:
+The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data. As far as I could see, detailed data for weather on Cape town is blocked by paywalls. In this regard, I compiled a small monthly aggregate data set for Cape Town temperatures and rainfall.
+
+## Question 3: Coldplay vs Metallica
+This question has been stored in the folder named `question-3-MusicTaste`. The following section explains step by step how the questions were answered.
+
+### Data operations that need to be completed:
+* Filter data for studio albums
+  * I used some string operations to acheive this.
+* Merge Metallica and Coldplay data.
+* Merge Spotify Data
+* Many observations in `duration` are missing. I created the function `convert_duration()` to deal with this. It uses data from another column, `duration_ms`, to calculate missing values.
+* Remove observations from the data that contain the words "Live", "Remix", and "Remastered", to compare original songs with one another.
+
+### The following questions guide the analysis:
+First, let's take look at the data as a whole.
+* How did the artist evolve over time?
+  * Create a Streamgraph to present this.
+  * A summary statistics table also included.
+* How did the albums produced by the evolve?
+  * Boxplots
+  * Summary statistics
+* What trends are there in the characteristics of the music?
+  * Scatterplots with trend lines.
+* How do the artists' live performances differ from their studio music?
+  * Violin plots
+  * 
+### Functions created:
+I created multiple functions for this analysis. Here is a short summary of what they do:
+* `convert_duration`: This function checks the duration of a song and converts it to seconds if the duration is missing (NA) but the duration in milliseconds is available. It takes two arguments, duration and duration_ms, and returns the converted duration in seconds.
+
+* `contains_filter_word`: This function checks if a song name contains any of the specified filter words. It takes a song name as an argument and returns TRUE if any of the filter words are found, otherwise FALSE.
+
+* `calculate_days_since_first_release`: This function calculates the number of days since the first release for each artist in the dataset. It arranges the data by artist and release date, groups it by artist, and adds two new columns: first_release_date (the earliest release date for the artist) and days_since_first_release (the number of days since the first release). The function returns the updated dataset.
+
+* `is_live_version`: This function checks if a song name contains the word "Live" (case-insensitive). It takes a song name as an argument and returns TRUE if the word "Live" is found, otherwise FALSE.
