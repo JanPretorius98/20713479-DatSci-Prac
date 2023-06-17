@@ -107,5 +107,14 @@ This question has been stored in the folder named `question-4-Netflix`. The foll
 
 ### Data operations completed:
 * Determine main genres from `df_titles` by taking the first genre mentioned.
+* Calculate audience score by genre.
+* Calculate mean profitability by genre.
 
 ### The following questions guide the analysis:
+* What Genres do Netlix host the most?
+  * Bar plot showing number of titles
+  * With `df_titles`
+* What genres have favourable audience scores?
+  * Another bar plot, but with `df_movies`
+* What genres are the most profitable?
+  * Create a table with `df_movies`
