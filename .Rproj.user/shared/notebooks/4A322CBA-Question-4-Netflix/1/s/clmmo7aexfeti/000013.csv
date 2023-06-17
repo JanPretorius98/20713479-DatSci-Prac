@@ -1,0 +1,31 @@
+"0","# Calculate average audience score by genre
+"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","avg_score_genre <- df_movies %>%"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","  group_by(Genre) %>%"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","  summarise(AvgScore = mean(`Audience score %`, na.rm = TRUE)) %>%"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","  arrange(desc(AvgScore)) %>%"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","  head(10)"
+"1","[1m[33mError[39m in `summarise()`:[22m
+[38;5;255m[36mℹ[38;5;255m In argument: `AvgScore = mean(`Audience score %`, na.rm = TRUE)`.
+[36mℹ[38;5;255m In group 1: `Genre = ""Action""`.[39m
+[1mCaused by error:[22m
+[33m![39m object 'Audience score %' not found
+Backtrace:
+[90m  1. [39m... %>% head(10)
+[90m 13. [39m[1mbase[22m::mean(`Audience score %`, na.rm = TRUE)
+"

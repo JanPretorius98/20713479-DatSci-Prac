@@ -1,0 +1,7 @@
+"0",""
+"0","# Plot genre distribution"
+"0","ggplot(genre_distribution, aes(x = reorder(Main_Genre, -Count), y = Count)) +"
+"0","  geom_bar(stat = ""identity"", fill = ""#dd5182"") +"
+"0","  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +"
+"0","  th +"
+"0","  labs(x = ""Main Genre"", y = ""Number of Titles"", title = ""Netflix Content Distribution by Main Genre"")"

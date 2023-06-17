@@ -1,0 +1,51 @@
+"0","#   Housekeeping"
+"0","setwd(""/Users/janhendrikpretorius/Library/CloudStorage/OneDrive-StellenboschUniversity/20713479-DatSci-Prac"")"
+"2","Warning: The working directory was changed to /Users/janhendrikpretorius/Library/CloudStorage/OneDrive-StellenboschUniversity/20713479-DatSci-Prac inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks."
+"0","knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)"
+"0","    #   Clear environment"
+"0","rm(list = ls())"
+"0","options(scipen = 999)"
+"0",""
+"0","    #   Get external code"
+"0","source(""utilities/aesthetics.R"") #  Get plot themes"
+"2","Warning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+Please use the `linewidth` argument instead."
+"0","source(""utilities/convert_numeric.R"")  # Convert multiple columns to numeric "
+"0","    #   Load libraries"
+"0","pacman::p_load(dplyr, ggplot2, tidyverse, stringr, tidytext, ggridges, wordcloud2, ggmap, readxl, maps,"
+"0","               viridis, lubridate, ggstream, modelsummary, gt, knitr, kableExtra, ggrepel, zoo, "
+"0","               rnaturalearth, rnaturalearthdata, sf, lwgeom, jtools, jsonlite)"
+"0",""
+"0","    #   Load Data"
+"0","path <- ""data/netflix/"""
+"0",""
+"0","file <- ""credits.csv"""
+"0","df_credits <- read_csv(paste0(path, file))"
+"2","[1mRows: [22m[34m77213[39m [1mColumns: [22m[34m5[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (4): id, name, character, role
+[32mdbl[39m (1): person_id"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","file <- ""titles.csv"""
+"0","df_titles <- read_csv(paste0(path, file))"
+"2","[1mRows: [22m[34m5806[39m [1mColumns: [22m[34m15[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (8): id, title, type, description, age_certification, genres, production_countries, imdb_id
+[32mdbl[39m (7): release_year, runtime, seasons, imdb_score, imdb_votes, tmdb_popularity, tmdb_score"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","file <- ""Movies.csv"""
+"0","df_movies <- read_csv(paste0(path, file))"
+"2","[1mRows: [22m[34m74[39m [1mColumns: [22m[34m8[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (3): Film, Genre, Lead Studio
+[32mdbl[39m (5): Audience  score %, Profitability, Rotten Tomatoes %, Worldwide Gross, Year"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
