@@ -91,3 +91,6 @@ First, let's take look at the data as a whole.
   * Scatterplots with trend lines.
 * How do the artists' live performances differ from their studio music?
   * Violin plots
+  * 
+### Functions created:
+I created multiple functions for this analysis. Here is a short summary of what they do:
