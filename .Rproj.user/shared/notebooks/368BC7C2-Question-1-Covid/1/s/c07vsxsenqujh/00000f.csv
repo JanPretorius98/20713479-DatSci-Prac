@@ -1,0 +1,4 @@
+"0","gt(data) %>%"
+"0","  tab_header("
+"0","    title = ""Deaths as a proportion of cases per semester by continent (%)."""
+"0","  ) "
