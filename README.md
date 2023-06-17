@@ -123,7 +123,13 @@ This question has been stored in the folder named `question-4-Netflix`. The foll
 This question has been stored in the folder named `question-5-googlePlay`. The following section explains step by step how the questions were answered.
 
 ### Data operations completed:
+* Data Cleaning: The datasets, df_reviews and df_app, were cleaned to ensure data integrity. Duplicate rows were removed, irrelevant columns were dropped, and missing values were handled.
 
+* Column Formatting: The 'Last Updated' column in the df_app dataset was converted to a date format. The 'Installs' and 'Price' columns were cleaned by removing non-numeric characters and converting them to numeric. The 'Size' column was cleaned by removing 'M' and converting kilobytes (k) to megabytes (MB).
 
 ### The following questions guide the analysis:
+* Which app categories are the most profitable?
+  * The profitability of app categories was determined by calculating the mean total revenue for each category. The 'Price' and 'Installs' columns were multiplied to obtain the total revenue. The categories were then ordered based on total revenue, and a lollipop plot was created to visualize the profitability.
 
+* What are the average app sizes by category?
+  * The average app size for each category was calculated by taking the mean of the 'Size' column within each category. The results were sorted in descending order of average app size, and a table was created to display the average app size and mean total revenue by category.
