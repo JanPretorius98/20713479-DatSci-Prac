@@ -66,4 +66,4 @@ The following questions guide the analysis:
 * If the sun is out, how long does sunshine last?
   * Unfortunately, data not included.
 
-The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data.
+The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data. As far as I could see, data for weather on Cape town is blocked by paywalls. In this regard, it was not possible to compare Cape Town data with London data.
