@@ -91,7 +91,7 @@ First, let's take look at the data as a whole.
   * Scatterplots with trend lines.
 * How do the artists' live performances differ from their studio music?
   * Violin plots
-  * 
+
 ### Functions created:
 I created multiple functions for this analysis. Here is a short summary of what they do:
 * `convert_duration`: This function checks the duration of a song and converts it to seconds if the duration is missing (NA) but the duration in milliseconds is available. It takes two arguments, duration and duration_ms, and returns the converted duration in seconds.
@@ -107,5 +107,29 @@ This question has been stored in the folder named `question-4-Netflix`. The foll
 
 ### Data operations completed:
 * Determine main genres from `df_titles` by taking the first genre mentioned.
+* Calculate audience score by genre.
+* Calculate mean profitability by genre.
 
 ### The following questions guide the analysis:
+* What Genres do Netlix host the most?
+  * Bar plot showing number of titles
+  * With `df_titles`
+* What genres have favourable audience scores?
+  * Another bar plot, but with `df_movies`
+* What genres are the most profitable?
+  * Create a table with `df_movies`
+
+## Question 5: Google Play
+This question has been stored in the folder named `question-5-googlePlay`. The following section explains step by step how the questions were answered.
+
+### Data operations completed:
+* Data Cleaning: The datasets, df_reviews and df_app, were cleaned to ensure data integrity. Duplicate rows were removed, irrelevant columns were dropped, and missing values were handled.
+
+* Column Formatting: The 'Last Updated' column in the df_app dataset was converted to a date format. The 'Installs' and 'Price' columns were cleaned by removing non-numeric characters and converting them to numeric. The 'Size' column was cleaned by removing 'M' and converting kilobytes (k) to megabytes (MB).
+
+### The following questions guide the analysis:
+* Which app categories are the most profitable?
+  * The profitability of app categories was determined by calculating the mean total revenue for each category. The 'Price' and 'Installs' columns were multiplied to obtain the total revenue. The categories were then ordered based on total revenue, and a lollipop plot was created to visualize the profitability.
+
+* What are the average app sizes by category?
+  * The average app size for each category was calculated by taking the mean of the 'Size' column within each category. The results were sorted in descending order of average app size, and a table was created to display the average app size and mean total revenue by category.
