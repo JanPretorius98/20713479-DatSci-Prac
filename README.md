@@ -76,6 +76,7 @@ This question has been stored in the folder named `question-3-MusicTaste`. The f
   * I used some string operations to acheive this.
 * Merge Metallica and Coldplay data.
 * Merge Spotify Data
+* Many observations in `duration` are missing. I created the function `convert_duration()` to deal with this. It uses data from another column, `duration_ms`, to calculate missing values.
 
 ### The following questions guide the analysis:
 
