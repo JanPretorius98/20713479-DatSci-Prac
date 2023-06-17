@@ -65,5 +65,6 @@ The following questions guide the analysis:
   * Unfortunately, data not included.
 * If the sun is out, how long does sunshine last?
   * Unfortunately, data not included.
+* Compare Cpt temperature and rainfall with London
 
-The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data. As far as I could see, data for weather on Cape town is blocked by paywalls. In this regard, it was not possible to compare Cape Town data with London data.
+The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data. As far as I could see, detailed data for weather on Cape town is blocked by paywalls. In this regard, I compiled a small monthly aggregate data set for Cape Town temperatures and rainfall.
