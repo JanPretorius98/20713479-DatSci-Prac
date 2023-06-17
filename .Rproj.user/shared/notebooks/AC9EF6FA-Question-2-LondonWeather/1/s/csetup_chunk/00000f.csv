@@ -21,3 +21,7 @@
 "0",""
 "0","file <- ""UKMonthly_Detailed.csv"""
 "0","df_detailed <- read_csv(paste0(path, file))"
+"0",""
+"0","file <- ""cpt_weather.xlsx"""
+"0","df_cpt <- read_xlsx(paste0(path, file))"
+"0",""

@@ -1,5 +1,6 @@
 "0","#   Housekeeping"
 "0","setwd(""/Users/janhendrikpretorius/Library/CloudStorage/OneDrive-StellenboschUniversity/20713479-DatSci-Prac"")"
+"2","Warning: The working directory was changed to /Users/janhendrikpretorius/Library/CloudStorage/OneDrive-StellenboschUniversity/20713479-DatSci-Prac inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks."
 "0","knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)"
 "0","    #   Clear environment"
 "0","rm(list = ls())"
@@ -18,6 +19,22 @@
 "0",""
 "0","file <- ""Deaths_by_cause.csv"""
 "0","df_deaths <- read_csv(paste0(path, file))"
-"0",""
+"2","[1mRows: [22m[34m7273[39m [1mColumns: [22m[34m36[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (3): Entity, Code, Number of executions (Amnesty International)
+[32mdbl[39m (33): Year, Deaths - Meningitis - Sex: Both - Age: All Ages (Number), Deaths - Alzheimer's disease and other dementias - Sex: Both - Age: All Ages (Number), Deaths - P..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
 "0","file <- ""owid-covid-data.csv"""
 "0","df_covid <- read_csv(paste0(path, file))"
+"2","[1mRows: [22m[34m194260[39m [1mColumns: [22m[34m67[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m   (4): iso_code, continent, location, tests_units
+[32mdbl[39m  (62): total_cases, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_pe...
+[34mdate[39m  (1): date"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."

@@ -1,0 +1,76 @@
+"0","#   Housekeeping"
+"0","setwd(""/Users/janhendrikpretorius/Library/CloudStorage/OneDrive-StellenboschUniversity/20713479-DatSci-Prac"")"
+"0","knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)"
+"0","    #   Clear environment"
+"0","rm(list = ls())"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","options(scipen = 999)"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","    #   Get external code"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","source(""utilities/aesthetics.R"") #  Get plot themes"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","source(""utilities/convert_numeric.R"")  # Convert multiple columns to numeric "
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","    #   Load libraries"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","pacman::p_load(dplyr, ggplot2, tidyverse, stringr, tidytext, ggridges, wordcloud2, ggmap, readxl, maps,"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","               viridis, lubridate, ggstream, modelsummary, gt, knitr, kableExtra, ggrepel, zoo, "
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","               rnaturalearth, rnaturalearthdata, sf, lwgeom, jtools)"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","    #   Load Data"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","path <- ""data/Coldplay_vs_Metallica/"""
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","file <- ""Coldplay.csv"""
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","df_coldplay <- read_csv(paste0(path, file))"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","file <- ""metallica.csv"""
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","df_metallica <- read_csv(paste0(path, file))"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","df_metallica$album_name <- df_metallica$album"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","file <- ""Broader_Spotify_Info.csv"""
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
+"0","df_spotify <- read_csv(paste0(path, file))"
+"2","Error in exists(cacheKey, where = .rs.WorkingDataEnv, inherits = FALSE) : 
+  invalid first argument
+"
