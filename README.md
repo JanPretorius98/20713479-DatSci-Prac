@@ -13,7 +13,7 @@ I also created a folder named `utilities` that contains some global scripts, suc
 * `lubridate`
 * `ggstream`
 * `modelsummary`
-* `gt
+* `gt`
 * `knitr`
 * `ggrepel`
 * `zoo`
