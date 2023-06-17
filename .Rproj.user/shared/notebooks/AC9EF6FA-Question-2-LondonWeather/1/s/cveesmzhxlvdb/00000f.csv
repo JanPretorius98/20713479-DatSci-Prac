@@ -1,0 +1,6 @@
+"0","df_london$date <- as.Date(as.character(df_london$date), format = ""%Y%m%d"")"
+"0","df_london$month <- month(df_london$date, label=TRUE) # Create a new column for months"
+"0",""
+"0","# Convert DATE column to date object"
+"0","df_detailed$DATE <- as.Date(paste(df_detailed$DATE, ""01"", sep = ""-""))"
+"0",""

@@ -1,0 +1,8 @@
+"0",""
+"0","# Create an area plot of the proportion of deaths by continent"
+"0","ggplot(df_prop_deaths, aes(x = date, y = count, fill = continent)) +"
+"0","    geom_area(position = 'stack') +"
+"0","    scale_fill_manual(values = palette) +"
+"0","    labs(x = ""Date"", y = ""Proportion of Deaths"", fill = ""Continent"") +"
+"0","    th +"
+"0","    labs(title = ""Figure 2: Proportion of COVID-19 deaths to cases by continent over time"")"
