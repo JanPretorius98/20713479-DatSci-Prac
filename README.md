@@ -118,3 +118,12 @@ This question has been stored in the folder named `question-4-Netflix`. The foll
   * Another bar plot, but with `df_movies`
 * What genres are the most profitable?
   * Create a table with `df_movies`
+
+## Question 5: Google Play
+This question has been stored in the folder named `question-5-googlePlay`. The following section explains step by step how the questions were answered.
+
+### Data operations completed:
+
+
+### The following questions guide the analysis:
+
