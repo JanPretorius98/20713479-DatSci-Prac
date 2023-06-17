@@ -30,7 +30,7 @@ source("utilities/convert_numeric.R")  # Convert multiple columns to numeric
     #   Load libraries
 pacman::p_load(dplyr, ggplot2, tidyverse, stringr, tidytext, ggridges, wordcloud2, ggmap, readxl, maps,
                viridis, lubridate, ggstream, modelsummary, gt, knitr, kableExtra, ggrepel, zoo, 
-               rnaturalearth, rnaturalearthdata, sf, lwgeom, jtools, jsonlite)
+               rnaturalearth, rnaturalearthdata, sf, lwgeom)
 
     #   Load Data
 path <- "data/netflix/"
