@@ -51,9 +51,8 @@ Kable was given me several issues with printing a table, and I was unable to rec
 ## Question 2: London Weather
 This question has been stored in the folder named `question-2-londonWeather`. The following section explains step by step how the questions were answered.
 
-Some data operations need to be performed:
+Small data operations need to be performed:
 * Format the dates in the data.
-* Join detailed data and london data
 
 The plan is to create some quirky, but visually appealing graphs.
 The following questions guide the analysis:
