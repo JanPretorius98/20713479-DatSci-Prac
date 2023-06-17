@@ -62,7 +62,8 @@ The following questions guide the analysis:
   * Create a raincloud plot (basically a violin plot) to visualise rainfall
   * Create an area plot to show sunshine and cloud coverage
 * Is London windy, foggy?
-  * 
+  * Unfortunately, data not included.
 * If the sun is out, how long does sunshine last?
-  * Look at variable PSUN. Draw and area graph.
+  * Unfortunately, data not included.
 
+The London data set contains basically the same information as the detailed set. Unfortunately, some of the variables, like hours of sunshine, wind, and fog, were not present in the data.
