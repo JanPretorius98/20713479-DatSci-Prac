@@ -21,6 +21,8 @@ The first important thing to notice is the nature of the data - time-series. Thi
   * Streamgraphs and lineplots
 * What are the differences in cases and death trends by continent?
   * Geospatial analysis with choropleth maps; proportion of deaths to cases
+* Why do African countries have so few reported cases and deaths as compared to other regions?
+ * Line plot of total tests and positivity rates.
 * How do some country level specifics influence the impact of covid?
   * Scatterplots
 * How did infrastructure development contribute to the impact relief?
