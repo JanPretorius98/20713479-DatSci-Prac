@@ -77,6 +77,17 @@ This question has been stored in the folder named `question-3-MusicTaste`. The f
 * Merge Metallica and Coldplay data.
 * Merge Spotify Data
 * Many observations in `duration` are missing. I created the function `convert_duration()` to deal with this. It uses data from another column, `duration_ms`, to calculate missing values.
+* Remove observations from the data that contain the words "Live", "Remix", and "Remastered", to compare original songs with one another.
 
 ### The following questions guide the analysis:
-
+First, let's take look at the data as a whole.
+* How did the artist evolve over time?
+  * Create a Streamgraph to present this.
+  * A summary statistics table also included.
+* How did the albums produced by the evolve?
+  * Boxplots
+  * Summary statistics
+* What trends are there in the characteristics of the music?
+  * Scatterplots with trend lines.
+* How do the artists' live performances differ from their studio music?
+  * Violin plots
