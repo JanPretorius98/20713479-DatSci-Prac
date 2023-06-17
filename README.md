@@ -48,4 +48,20 @@ There are some data operations, such as aggregating the covid cases and deaths b
 When calculating totals per hunderd/thousand/million by continent, I calculated it by summing the amount for each continent and dividing that by the population for the continent and then dividing by hunder/thousand/million. There are some columns that measure this, but as soon as these are summed by continent, you do not get true totals per hundred.
 Kable was given me several issues with printing a table, and I was unable to rectify the issue
 
+## Question 2: London Weather
+This question has been stored in the folder named `question-2-londonWeather`. The following section explains step by step how the questions were answered.
+
+Some data operations need to be performed:
+* Format the dates in the data.
+* Join detailed data and london data
+
+The plan is to create some quirky, but visually appealing graphs.
+The following questions guide the analysis:
+* What is the temperature usually like in London?
+ * Create a colour gradient ridgeline plot
+* What is the weather like?
+ * Create a raincloud plot (basically a violin plot) to visualise rainfall
+ * Create an area plot to show sunshine and cloud coverage
+* Is London windy, foggy?
+* If the sun is out, how long does sunshine last?
 
