@@ -58,10 +58,10 @@ Some data operations need to be performed:
 The plan is to create some quirky, but visually appealing graphs.
 The following questions guide the analysis:
 * What is the temperature usually like in London?
- * Create a colour gradient ridgeline plot
+  * Create a colour gradient ridgeline plot
 * What is the weather like?
- * Create a raincloud plot (basically a violin plot) to visualise rainfall
- * Create an area plot to show sunshine and cloud coverage
+  * Create a raincloud plot (basically a violin plot) to visualise rainfall
+  * Create an area plot to show sunshine and cloud coverage
 * Is London windy, foggy?
 * If the sun is out, how long does sunshine last?
 
