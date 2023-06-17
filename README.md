@@ -52,7 +52,7 @@ Kable was given me several issues with printing a table, and I was unable to rec
 ## Question 2: London Weather
 This question has been stored in the folder named `question-2-londonWeather`. The following section explains step by step how the questions were answered.
 
-### Small data operations need to be performed:
+### Small data operations performed:
 * Format the dates in the data.
 
 ### The following questions guide the analysis:
@@ -71,7 +71,7 @@ The London data set contains basically the same information as the detailed set.
 ## Question 3: Coldplay vs Metallica
 This question has been stored in the folder named `question-3-MusicTaste`. The following section explains step by step how the questions were answered.
 
-### Data operations that need to be completed:
+### Data operations completed:
 * Filter data for studio albums
   * I used some string operations to acheive this.
 * Merge Metallica and Coldplay data.
@@ -101,3 +101,11 @@ I created multiple functions for this analysis. Here is a short summary of what 
 * `calculate_days_since_first_release`: This function calculates the number of days since the first release for each artist in the dataset. It arranges the data by artist and release date, groups it by artist, and adds two new columns: first_release_date (the earliest release date for the artist) and days_since_first_release (the number of days since the first release). The function returns the updated dataset.
 
 * `is_live_version`: This function checks if a song name contains the word "Live" (case-insensitive). It takes a song name as an argument and returns TRUE if the word "Live" is found, otherwise FALSE.
+
+## Question 4: Netflix
+This question has been stored in the folder named `question-4-Netflix`. The following section explains step by step how the questions were answered.
+
+### Data operations completed:
+* Determine main genres from `df_titles` by taking the first genre mentioned.
+
+### The following questions guide the analysis:
