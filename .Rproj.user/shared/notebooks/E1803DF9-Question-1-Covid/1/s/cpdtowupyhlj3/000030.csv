@@ -1,0 +1,5 @@
+"0","# Filter out NA continents"
+"0","group_vars <- c(""date"", ""continent"")"
+"0","sum_vars <- c(""new_cases"", ""new_deaths"")"
+"0",""
+"0","df_covid_continent <- aggregate_data(df_covid, group_vars, sum_vars)"
