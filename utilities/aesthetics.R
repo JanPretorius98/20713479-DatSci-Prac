@@ -38,5 +38,4 @@ th <- theme(
     strip.text = element_text(size = 12,family = "Palatino",vjust = 1,hjust = 0.5, face="bold"),
     strip.background = element_blank(),
     text = element_text(family = "Palatino")
-
 )
